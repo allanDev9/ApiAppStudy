@@ -1,0 +1,31 @@
+# --- Archivos de compilación y temporales ---
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.useros
+*.sln.docstates
+
+# --- Configuraciones de usuario y IDEs ---
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.useros
+*.pidb
+*.sln.docstates
+
+# --- Secretos y configuraciones de entorno ---
+appsettings.Development.json
+appsettings.Local.json
+*.secrets.json
+
+# --- Dependencias ---
+node_modules/
+packages/
+
+# --- Otros ---
+*.db
+*.sqlite
