@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApiAppStudy.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiAppStudy.Infrastructure
 {
