@@ -21,6 +21,7 @@
 appsettings.Development.json
 appsettings.Local.json
 *.secrets.json
+.env
 
 # --- Dependencias ---
 node_modules/
