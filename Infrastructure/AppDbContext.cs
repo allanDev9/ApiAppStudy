@@ -1,4 +1,4 @@
-﻿using ApiAppStudy.Models;
+﻿using ApiAppStudy.Features.Activities.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiAppStudy.Infrastructure
@@ -12,5 +12,12 @@ namespace ApiAppStudy.Infrastructure
         // Define tus DbSets (tablas)
         public DbSet<Activity> Activites { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Aplica todas las configuraciones del ensamblado
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+        }
     }
 }

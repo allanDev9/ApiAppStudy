@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Activities\" />
+    <Folder Include="Features\Activities\Application\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

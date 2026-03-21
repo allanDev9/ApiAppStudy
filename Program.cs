@@ -1,3 +1,5 @@
+using ApiAppStudy.Features.Activities.Domain.Interfaces;
+using ApiAppStudy.Features.Activities.Infrastructure;
 using ApiAppStudy.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+// Repositories
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
 
 // Add services to the container.
 
