@@ -270,24 +270,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Allan\\.nuget\\packages\\": {}
+    "/home/allan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Allan\\Desktop\\projects\\ApiAppStudy\\ApiAppStudy.csproj",
+      "projectUniqueName": "/home/allan/Documents/projects/ApiAppStudy/ApiAppStudy.csproj",
       "projectName": "ApiAppStudy",
-      "projectPath": "C:\\Users\\Allan\\Desktop\\projects\\ApiAppStudy\\ApiAppStudy.csproj",
-      "packagesPath": "C:\\Users\\Allan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Allan\\Desktop\\projects\\ApiAppStudy\\obj\\",
+      "projectPath": "/home/allan/Documents/projects/ApiAppStudy/ApiAppStudy.csproj",
+      "packagesPath": "/home/allan/.nuget/packages/",
+      "outputPath": "/home/allan/Documents/projects/ApiAppStudy/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Allan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/allan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -306,7 +307,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -340,7 +341,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
