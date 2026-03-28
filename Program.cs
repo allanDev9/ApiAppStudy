@@ -9,6 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // --- Configurar servicios ---
 
+// Configuracion de CORS para permitir solicitudes desde el frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .WithMethods("GET", "POST", "PUT", "DELETE");
+    });
+});
+
 // Registrar DbContext en el contenedor de inyección de dependencias
 
 // Obtener la cadena de conexión desde appsettings.json
@@ -42,6 +53,7 @@ catch (Exception ex)
 }
 
 // --- Configurar middleware ---
+app.UseCors("AllowFrontend");
 
 if (app.Environment.IsDevelopment())
 {
@@ -49,6 +61,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 
 // Mapear los controllers a las rutas
 app.MapControllers();

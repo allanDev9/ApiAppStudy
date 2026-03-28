@@ -9,6 +9,6 @@ public class Activity
     public string Name { get; set; } = string.Empty;
     [Column("description")]
     public string Description { get; set; } = string.Empty;
-    [Column("create_date")]
+    [Column("created_date")]
     public DateTime CreateDate { get; set; } = DateTime.UtcNow;
 }
